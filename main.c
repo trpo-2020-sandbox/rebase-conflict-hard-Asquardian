@@ -26,6 +26,7 @@ void print_array(int* arr, int size)
     printf("\n");
 }
 
+
 int main()
 {
     int arr[] = {3, 1, 4, 1, 5};
