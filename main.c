@@ -16,31 +16,22 @@ int max_element(int* arr, int size)
     return max;
 }
 
-int main()
+void print_array(int* arr, int size)
 {
-    int arr[] = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
-
-<<<<<<< HEAD
-    const int max = max_element(arr, 10);
-||||||| merged common ancestors
-    const int max = max_element(arr, 5);
-=======
-    const int max = max_element(arr, N_ELEMENTS(arr));
->>>>>>> Count array items with macro
-
     printf("Array: ");
     int i;
-<<<<<<< HEAD
-    for (i = 0; i < 10; ++i) {
-||||||| merged common ancestors
-    for (i = 0; i < 5; ++i) {
-=======
-    for (i = 0; i < N_ELEMENTS(arr); ++i) {
->>>>>>> Count array items with macro
         printf("%d ", arr[i]);
     }
     printf("\n");
+}
 
+int main()
+{
+    int arr[] = {3, 1, 4, 1, 5};
+
+    const int max = max_element(arr, N_ELEMENTS(arr));
+
+    print_array(arr, N_ELEMENTS(arr));
     printf("Max element: %d\n", max);
 
     return 0;
